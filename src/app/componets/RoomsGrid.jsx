@@ -1,93 +1,111 @@
-// components/RoomGrid.tsx
-const rooms = [
+"use client";
+import Image from "next/image";
+import { FaBed, FaPaw, FaTv, FaWifi, FaUtensils } from "react-icons/fa";
+
+const hotels = [
   {
-    type: 'BEST PRICE',
-    image: '/home/slider1.jpg',
-    label: 'BEST PRICE',
+    name: " V Hotel The Grand Shoba",
+    image: "/home/slider1.jpg",
+    link: "https://www.vhotelthegrandshoba.com/",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    type: 'ALL INCLUDED',
-    title: 'Single Room with Ocean View',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus.',
-    price: '$ 75,20',
-    bg: 'bg-[#5d8da6]',
+    name: "V Hotel TSSG",
+    image: "/home/slider6.jpg",
+    link: "https://www.vhoteltssg.com/",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    image: '/home/slider2.jpg',
+    name: "Hotel Delhi Airport Plaza",
+    image: "/home/slider2.jpg",
+    link: "https://www.hoteldelhiairportplaza.com/",
+    icons: [<FaPaw />, <FaBed />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    type: 'SUMMER PROMO',
-    title: "Family Room with Children's Room",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus.',
-    price: '$ 62,60',
-    bg: 'bg-[#03204c]',
+    name: "Hotel  Near Delhi Airport",
+    image: "/home/slider3.jpg",
+    link: "https://www.hotelneardelhiairport.com/",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    type: 'HALF BOARD',
-    title: 'Luxury Suite with Sauna & Terrace',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus.',
-    price: '$ 89,24',
-   
-    bg: 'bg-[#5d8da6]',
+    name: "Hotel Delhi Airport ",
+    image: "/home/slider4.jpg",
+    link: "https://www.hoteldelhiairport.com/",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    image: '/home/slider3.jpg',
+    name: "Hotel Annexe",
+    image: "/home/slider5.jpg",
+    link: "#",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    type: 'PET ALLOWED',
-    title: 'Mini Apartment with Kitchen',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus.',
-    price: '$ 83,20',
- bg: 'bg-[#03204c]',
-    labelRight: 'SALE',
+    name: "Hotel Port View",
+    image: "/home/slider6.jpg",
+    link: "#",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
   {
-    image: '/home/slider4.jpg',
-    label: 'NEW',
+    name: "Hotel in Mahipalpur",
+    image: "/home/slider7.jpg",
+    link: "#",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
+  },
+   {
+    name: "Hotel Near Yashobhoomi",
+    image: "/home/slider10.jpg",
+    link: "#",
+    icons: [<FaBed />, <FaPaw />, <FaTv />, <FaUtensils />, <FaWifi />],
   },
 ];
 
-export default function RoomGrid() {
+export default function HotelGrid() {
   return (
-    <div className="grid grid-cols-1 pt-15 bg-white sm:grid-cols-2 lg:grid-cols-4 gap-0">
-      {rooms.map((room, i) => (
-        <div key={i} className="relative h-[300px] md:h-[400px] overflow-hidden">
-          {/* Image card */}
-          {room.image ? (
-            <div className="h-full w-full">
-              <img
-                src={room.image}
-                alt="room"
-                className="w-full h-full object-cover"
-              />
-              {room.label && (
-                <span className="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 uppercase">
-                  {room.label}
-                </span>
-              )}
+    <>
+    <div className="bg-[#f8f5f0]">
+      <p className="text-xl text-center pt-15 text-[#f5bc27]">Our Luxury Hotels</p>
+      <p className="text-center text-2xl text-black md:text-4xl pb-5 ">Experience Comfort Across Our Hotels</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-5 gap-6 p-4">
+      {hotels.map((hotel, index) => (
+        <div
+          key={index}
+          className="relative group overflow-hidden rounded-md shadow-lg"
+        >
+          {/* Image */}
+          <Image
+            src={hotel.image}
+            alt={hotel.name}
+            width={500}
+            height={350}
+            className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+          />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-[#0000002d] bg-opacity-30 group-hover:bg-opacity-50 transition"></div>
+
+          {/* Border */}
+          <div className="absolute inset-4 border border-white"></div>
+
+          {/* Text content */}
+          <div className="absolute inset-0 flex flex-col items-start justify-end p-6 text-white z-10">
+            <h2 className="text-lg font-semibold mb-2">{hotel.name}</h2>
+            <div className="flex space-x-2 text-yellow-400 text-sm mb-4">
+              {hotel.icons.map((icon, i) => (
+                <span key={i}>{icon}</span>
+              ))}
             </div>
-          ) : (
-            // Text block card
-            <div
-              className={`flex flex-col justify-center items-center text-center h-full p-6 text-white ${room.bg || 'bg-[#2B3D59]'}`}
+            <a
+              href={hotel.link} target="_blank"
+              className="px-3 py-1 border border-white text-xs hover:bg-yellow-500 hover:border-yellow-500 transition"
             >
-              <div className="absolute top-2 left-2 text-xs uppercase tracking-wide">
-                {room.type}
-              </div>
-              {room.labelRight && (
-                <div className="absolute top-2 right-2 text-xs uppercase tracking-wide">
-                  {room.labelRight}
-                </div>
-              )}
-              <h3 className="text-lg font-semibold mb-2">{room.title}</h3>
-              <p className="text-sm mb-4">{room.description}</p>
-              <div className="bg-white text-black px-4 py-1 text-sm font-medium rounded">
-                {room.price}
-              </div>
-            </div>
-          )}
+              CLICK HERE
+            </a>
+          </div>
         </div>
       ))}
     </div>
+    </div>
+    
+    </>
   );
 }

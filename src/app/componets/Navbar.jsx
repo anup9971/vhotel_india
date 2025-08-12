@@ -81,7 +81,7 @@ export default function HotelShowcase() {
 
   return (
     <div className="min-h-screen bg-white ">
-      <header className="bg-[#1D3151] text-white py-4 px-6 flex justify-between items-center">
+      <header className="bg-[#000000] text-white py-4 px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <Image src="/logo.png" alt="Vishwanatha Logo" width={50} height={50} />
           <span className="text-xl font-bold">Vishwanatha HOSPITALITY PVT. LTD.</span>

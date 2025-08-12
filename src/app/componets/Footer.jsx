@@ -1,22 +1,29 @@
 // components/Footer.tsx
+import { MdOutlineMail } from "react-icons/md";
+import { ImLocation } from "react-icons/im";
+import { FaEarthAmericas } from "react-icons/fa6";
+
 import {
   FaInstagram,
   FaTwitter,
   FaFacebookF,
   FaPinterestP,
   FaYoutube,
+  FaPhoneAlt,
 } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#072354] text-white text-sm">
+    <footer className="bg-[#222222] text-white text-sm">
       {/* Top */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20 py-10">
         {/* Phone Support */}
         <div>
-          <h4 className="text-lg font-semibold mb-2">Phone Support</h4>
-          <p className="text-xs text-gray-300 uppercase mb-1">24 hours a day</p>
-          <p className="text-lg font-medium">+ 01 345 647 745</p>
+          <h4 className=" font-semibold mb-2">Information</h4>
+          <p className=" flex gap-3 font-medium mb-2 hover:text-[#f5bc27] hover:underline"> <FaPhoneAlt className="text-[#f5bc27]"/> +91 9811344557</p>
+          <a className=" flex gap-3 font-medium mb-2 hover:text-[#f5bc27] hover:underline" href="mailto:info@vhotelindia.com"> <MdOutlineMail className="text-[#f5bc27]" />info@vhotelindia.com</a>
+          <p  className=" flex gap-3 font-medium mb-2 hover:text-[#f5bc27] hover:underline"> <ImLocation className="text-[#f5bc27]" /> New Delhi</p>
+          <a className=" flex gap-3 font-medium mb-2 hover:text-[#f5bc27] hover:underline" href="http://www.vhotelindia.com" target="_blank" rel="noopener noreferrer"> <FaEarthAmericas className="text-[#f5bc27]" />  www.vhotelindia.com</a>
         </div>
 
         {/* Social Media */}
@@ -24,19 +31,19 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-2">Connect With Us</h4>
           <p className="text-xs text-gray-300 uppercase mb-4">Social Media Channels</p>
           <div className="flex gap-4 text-white text-lg">
-            <FaInstagram className="hover:text-gray-300 cursor-pointer" />
-            <FaTwitter className="hover:text-gray-300 cursor-pointer" />
-            <FaFacebookF className="hover:text-gray-300 cursor-pointer" />
-            <FaPinterestP className="hover:text-gray-300 cursor-pointer" />
-            <FaYoutube className="hover:text-gray-300 cursor-pointer" />
+            <FaInstagram className="hover:text-[#f5bc27] cursor-pointer" />
+            <FaTwitter className="hover:text-[#f5bc27] cursor-pointer" />
+            <FaFacebookF className="hover:text-[#f5bc27] cursor-pointer" />
+            <FaPinterestP className="hover:text-[#f5bc27] cursor-pointer" />
+            <FaYoutube className="hover:text-[#f5bc27] cursor-pointer" />
           </div>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h4 className="text-lg font-semibold mb-2">Newsletter</h4>
-          <p className="text-xs text-gray-300 uppercase mb-4">Sign up for special offers</p>
-          <form className="flex max-w-sm">
+          <h4 className="text-lg font-semibold mb-2">Write Reviews</h4>
+          {/* <p className="text-xs text-gray-300 uppercase mb-4">Sign up for special offers</p> */}
+          {/* <form className="flex max-w-sm">
             <input
               type="email"
               placeholder="Insert your email"
@@ -48,27 +55,27 @@ export default function Footer() {
             >
               Subscribe
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#050033] text-white py-4 px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs relative">
+      <div className="bg-[#333333] text-white py-4 px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs relative">
         {/* Nav Links */}
         <div className="flex gap-6">
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#f5bc27]">
             Home
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#f5bc27]">
             Services
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#f5bc27]">
             About
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#f5bc27]">
             Booking
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#f5bc27]">
             Contact
           </a>
         </div>

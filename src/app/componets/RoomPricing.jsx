@@ -46,7 +46,7 @@ export default function RoomPricing() {
             key={index}
             className={`relative p-8 shadow-md rounded-md ${
               plan.highlight
-                ? 'bg-[#6B8CA0] text-white bg-blend-overlay bg-cover bg-center'
+                ? 'bg-[#f5bc27] text-black bg-blend-overlay bg-cover bg-center'
                 : 'bg-white text-gray-900'
             }`}
             style={
