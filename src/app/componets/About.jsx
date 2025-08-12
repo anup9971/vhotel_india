@@ -34,11 +34,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white">
-     
-
-  
-
-      <section className="flex flex-col lg:flex-row items-center gap-12 px-8  max-w-7xl mx-auto">
+      <section className="flex flex-col pb-25 pt-18 lg:flex-row items-center gap-12 px-8  max-w-7xl mx-auto">
         <div className="relative w-full md:h-[450px] h-[350px] lg:w-1/2">
           <Image src="/home/slider2.jpg" alt="Resort" width={600} height={800} className="rounded-lg md:h-[450px] h-[350px] w-full object-cover" />
           <div className="absolute bottom-0 left-0 bg-[#000000] text-white p-4 text-center">
@@ -66,8 +62,8 @@ export default function About() {
                </div>
                  <div >
                   <Image src="/home/call-icon.png" height={50} width={50} />
-                 <p  className="text-gray-700">Booking Now</p>
-                 <a className="hover:text-[#F5BC27] hover:underline" href="tel:+919811344557"> +91-9811344557</a>
+                 <p  className="text-gray-700">Book Now</p>
+                 <a className="hover:text-[#F5BC27] text-black hover:underline" href="tel:+919811344557"> 9811344557</a>
                </div>
           </div>
           <div className="mt-8 flex items-center space-x-4">
