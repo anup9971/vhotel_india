@@ -52,7 +52,7 @@ export default function page() {
         {/* Google Map */}
         <div className="w-full h-80">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14019.8578282692!2d77.0816!3d28.5556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d5a3e92a0b7%3A0x3d017c1e3a771aad!2sIndira%20Gandhi%20International%20Airport!5e0!3m2!1sen!2sin!4v1687954295404!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed/v1/place?q=v%20hotel%20india%20Plot%20No.%20L-701%2F1%20Mahipalpur%20Extension%20Delhi%20Transit%20New%20Delhi%2C%20Delhi%20110037%20India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             width="100%"
             height="100%"
             style={{ border: 0 }}
