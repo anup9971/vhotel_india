@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Link from "next/link";
+import { FaYoutube } from "react-icons/fa6";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
@@ -54,9 +55,9 @@ export default function Navbar() {
 
         {/* Social Icons (Desktop) */}
         <div className="hidden md:flex space-x-4">
-          <a href="#" className="hover:text-yellow-400"><FaFacebook /></a>
-          <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
-          <a href="#" className="hover:text-yellow-400"><FaTripadvisor /></a>
+          <a href="https://www.facebook.com/people/V-Hospitality/pfbid08bQHVRYTLdp5ZNeBaaSwmNJK96eTx4vo3NJXQAhr1Lq41Z5mywMoP1hZ5gLJFNLwl/" className="hover:text-yellow-400"><FaFacebook /></a>
+          <a href="https://www.instagram.com/vhoteltssg/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="hover:text-yellow-400"><FaInstagram /></a>
+          <a href="https://www.youtube.com/watch?v=UixEVGN09YU" className="hover:text-yellow-400"><FaYoutube /></a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -103,9 +104,10 @@ export default function Navbar() {
 
           {/* Social Icons */}
           <div className="flex space-x-4 pt-4">
-            <a href="#" className="hover:text-yellow-400"><FaFacebook /></a>
-            <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
-            <a href="#" className="hover:text-yellow-400"><FaTripadvisor /></a>
+            <a href="https://www.facebook.com/people/V-Hospitality/pfbid08bQHVRYTLdp5ZNeBaaSwmNJK96eTx4vo3NJXQAhr1Lq41Z5mywMoP1hZ5gLJFNLwl/" className="hover:text-yellow-400"><FaFacebook /></a>
+          <a href="https://www.instagram.com/vhoteltssg/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="hover:text-yellow-400"><FaInstagram /></a>
+          <a href="https://www.youtube.com/watch?v=UixEVGN09YU" className="hover:text-yellow-400"><FaYoutube /></a>
+        
           </div>
         </div>
       )}
