@@ -3,7 +3,7 @@ export default function RoomPricing() {
   const plans = [
     {
       name: 'Small Room',
-      price: '52,00',
+      price: '5,200',
       features: [
         'Vestibulum maximus el',
         'Quisque vulputate conse',
@@ -13,7 +13,7 @@ export default function RoomPricing() {
     },
     {
       name: 'Extra Suite',
-      price: '78,00',
+      price: '7,800',
       features: [
         'Vestibulum maximus el',
         'Quisque vulputate conse',
@@ -25,7 +25,7 @@ export default function RoomPricing() {
     },
     {
       name: 'Apartment',
-      price: '95,00',
+      price: '9,500',
       features: [
         'Vestibulum maximus el',
         'Quisque vulputate conse',

@@ -11,31 +11,31 @@ export default function HeroSlider() {
     src: "/home/slider1.jpg",
     title: "V HOTEL THE GRAND SHOBA",
     description: "Experience comfort and elegance in our luxury suites.",
-    url:"/"
+    url:"https://www.vhotelthegrandshoba.com/"
   },
   {
     src: "/home/slider2.jpg",
     title: "HOTEL DELHI AIRPORT",
     description: "Stylish and modern decor to make your stay memorable.",
-    url:"/"
+    url:"https://www.hoteldelhiairport.com/"
   },
   {
     src: "/home/slider3.jpg",
     title: "HOTEL NEAR DELHI AIRPORT",
     description: "Relax in our beautifully designed lounge areas.",
-    url:"/"
+    url:"https://www.hotelneardelhiairport.com/"
   },
   {
     src: "/home/slider4.jpg",
     title: "V HOTEL TSSG",
     description: "Relax in our beautifully designed lounge areas.",
-    url:"/"
+    url:"https://www.vhoteltssg.com/"
   },
   {
     src: "/home/slider4.jpg",
     title: "HOTEL DELHI AIRPORT PLAZA",
     description: "Relax in our beautifully designed lounge areas.",
-    url:"/"
+    url:"https://www.hoteldelhiairportplaza.com/"
   },
   {
     src: "/home/slider6.jpg",

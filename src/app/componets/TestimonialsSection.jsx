@@ -8,39 +8,39 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    name: "Carolina Montoya",
-    role: "Managing Director",
+    name: "Mr. Shakir Khan",
+    // role: "Managing Director",
     image: "/images/testimonial.jpg",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Food quality is very good.Also I want to share review on hotel staff,supportive behavior and hospitality are very good.",
   },
   {
-    name: "John Doe",
-    role: "CEO, Company",
+    name: "Surender Bhatti",
+    // role: "CEO, Company",
     image: "/images/testimonial.jpg",
     content:
-      "Amazing service and great experience. Highly recommend to anyone looking for quality work.",
+      "The staff at  V Hotel TSSG  were incredibly welcoming and helpful throughout our stay room was very clean and comfortable.",
   },
   {
-    name: "Sarah Lee",
-    role: "Project Manager",
+    name: "Satyam Kumar",
+    // role: "Project Manager",
     image: "/images/testimonial.jpg",
     content:
-      "They exceeded my expectations and delivered on time. The best team I’ve worked with!",
+      "Food was awesome , very tasty and service was also better. I would like thank to all staff . Good manners.",
   },
    {
-    name: "John Doe",
-    role: "CEO, Company",
+    name: "Subodh Nayak",
+    // role: "CEO, Company",
     image: "/images/testimonial.jpg",
     content:
-      "Amazing service and great experience. Highly recommend to anyone looking for quality work.",
+      "𝐕𝐞𝐫𝐲 𝐧𝐞𝐚𝐫 𝐭𝐨 𝐀𝐢𝐫𝐩𝐨𝐫𝐭. 𝐓𝐡𝐞𝐲 𝐜𝐚𝐧 𝐛𝐨𝐨𝐤 𝐭𝐡𝐞 𝐫𝐨𝐨𝐦 𝐛𝐲 𝐩𝐡𝐨𝐧𝐞. 𝐒𝐞𝐫𝐯𝐢𝐜𝐞 𝐢𝐬 𝐯𝐞𝐫𝐲 𝐠𝐨𝐨𝐝. 𝐑𝐨𝐨𝐦 𝐚𝐥𝐬𝐨 𝐢𝐧 𝐧𝐞𝐠𝐥𝐢𝐠𝐢𝐛𝐥𝐞 𝐩𝐫𝐢𝐜𝐞.",
   },
   {
-    name: "Sarah Lee",
-    role: "Project Manager",
+    name: "Naveen Yadav",
+    // role: "Project Manager",
     image: "/images/testimonial.jpg",
     content:
-      "They exceeded my expectations and delivered on time. The best team I’ve worked with!",
+      "Great place to stay & conducting meetings.Food quality is very good  tasty.",
   },
 ];
 
@@ -66,11 +66,11 @@ export default function TestimonialsSection() {
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white rounded-lg shadow-2xl p-6 flex flex-col sm:flex-row gap-4 text-left items-center sm:items-start">
-                <img
+                {/* <img
                   src={t.image}
                   alt={t.name}
                   className="w-24 h-24 rounded-md object-cover"
-                />
+                /> */}
                 <div>
                   <p className="text-sm text-gray-700 mb-4">{t.content}</p>
                   <div className="flex text-yellow-500 mb-1">
