@@ -33,7 +33,7 @@ const testimonials = [
     // role: "CEO, Company",
     image: "/images/testimonial.jpg",
     content:
-      "𝐕𝐞𝐫𝐲 𝐧𝐞𝐚𝐫 𝐭𝐨 𝐀𝐢𝐫𝐩𝐨𝐫𝐭. 𝐓𝐡𝐞𝐲 𝐜𝐚𝐧 𝐛𝐨𝐨𝐤 𝐭𝐡𝐞 𝐫𝐨𝐨𝐦 𝐛𝐲 𝐩𝐡𝐨𝐧𝐞. 𝐒𝐞𝐫𝐯𝐢𝐜𝐞 𝐢𝐬 𝐯𝐞𝐫𝐲 𝐠𝐨𝐨𝐝. 𝐑𝐨𝐨𝐦 𝐚𝐥𝐬𝐨 𝐢𝐧 𝐧𝐞𝐠𝐥𝐢𝐠𝐢𝐛𝐥𝐞 𝐩𝐫𝐢𝐜𝐞.",
+      "Very near to Airport. They can book the room by phone. Service is very good. Room also in negligible price.",
   },
   {
     name: "Naveen Yadav",
@@ -64,8 +64,8 @@ export default function TestimonialsSection() {
           }}
         >
           {testimonials.map((t, index) => (
-            <SwiperSlide key={index}>
-              <div className=" bg-[#2a11053b] rounded-lg shadow-2xl p-6 flex flex-col sm:flex-row gap-4 text-left items-center sm:items-start">
+            <SwiperSlide key={index} >
+              <div className=" bg-[#2a11053b] h-[150px] rounded-lg shadow-2xl p-6 flex flex-col sm:flex-row gap-4 text-left items-center sm:items-start">
                 {/* <img
                   src={t.image}
                   alt={t.name}

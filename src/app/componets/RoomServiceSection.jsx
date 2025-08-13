@@ -14,12 +14,7 @@ export default function RoomServiceSection() {
           <p className="tracking-widest text-sm uppercase mb-3">Daily Sanification</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Room Service</h2>
           <p className="text-gray-800 md:text-gray-200 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor tellus vel mauris scelerisque accumsan.
-            Maecenas quis nunc sed sapien dignissim pulvinar.
-          </p>
-
-          <p className="text-gray-800 md:text-gray-200 mb-8">
-            Se d at gravida ligula, eget hendrerit nisi. Pellentesque et congue mauris, posuere finibus risus.
+          Step into our thoughtfully designed rooms, where elegance meets comfort. Each room is equipped with modern amenities, plush bedding, and a serene ambiance to ensure you feel at home. Whether you're here for business or leisure, our service ensures a peaceful stay with 24/7 room assistance, high-speed Wi-Fi, and in-room dining options.
           </p>
 
           <div>
@@ -35,11 +30,10 @@ export default function RoomServiceSection() {
 
         {/* Right Image with Discount Badge */}
         <div className="relative flex-shrink-0">
-          {/* Discount Circle */}
-          <div className="absolute -top-6 -left-6 bg-[#480200] bg-opacity-80 rounded-full w-40 h-40 flex flex-col items-center justify-center text-white">
-            <span className="text-sm uppercase">Up to</span>
-            <span className="text-4xl font-bold">30%</span>
-            <span className="text-xs uppercase">On Selected Rooms</span>
+          <div className="absolute md:top-[-170px] md:left-4  bg-[#480200] bg-opacity-80 rounded-full w-40 h-40 flex flex-col items-center justify-center text-white">
+            <span className="text-3xl font-serif uppercase">Up to</span>
+            <span className="text-4xl font-serif font-bold">30%</span>
+            <span className="text-xs  font-serif uppercase">On Selected Rooms</span>
           </div>
 
           {/* Towels Image */}
