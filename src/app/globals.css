@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  transform: scale(0.6); /* arrow overall chhota */
+  color: #fff; /* arrow ka color */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 40px !important; /* arrow ka icon size */
+}
