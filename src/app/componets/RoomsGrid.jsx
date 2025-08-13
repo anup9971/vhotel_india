@@ -77,26 +77,32 @@ export default function HotelGrid() {
             alt={hotel.name}
             width={500}
             height={350}
-            className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            className="w-full h-64 object-cover transform  "
           />
 
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-[#0000002d] bg-opacity-30 group-hover:bg-opacity-50 transition"></div>
+          <div className="absolute inset-0 bg-[#0000007a] bg-opacity-30 group-hover:bg-opacity-50 transition"></div>
 
           {/* Border */}
-          <div className="absolute inset-4 border border-white"></div>
+          {/* <div className="absolute inset-4 border border-white"></div> */}
+
+          
+          <div className="absolute top-11 right-0 bg-[#2a1105] text-white text-xs rotate-25 origin-top-right px-2 py-1">
+                ★ Special Offer
+              </div>
+
 
           {/* Text content */}
           <div className="absolute inset-0 flex flex-col items-start justify-end p-6 text-white z-10">
             <h2 className="text-lg font-semibold mb-2">{hotel.name}</h2>
-            <div className="flex space-x-2 text-yellow-400 text-sm mb-4">
+            <div className="flex space-x-2 text-[#ffffff] text-sm mb-4">
               {hotel.icons.map((icon, i) => (
                 <span key={i}>{icon}</span>
               ))}
             </div>
             <a
               href={hotel.link} target="_blank"
-              className="px-3 py-1 border border-white text-xs hover:bg-yellow-500 hover:border-yellow-500 transition"
+              className="px-3 py-1 border border-white text-xs hover:bg-[#480200] hover:border-black transition"
             >
               CLICK HERE
             </a>

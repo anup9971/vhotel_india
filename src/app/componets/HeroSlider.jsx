@@ -81,12 +81,14 @@ export default function   HeroSlider() {
   return (
     <>
    <section className="relative w-full mt-0   overflow-hidden">
-        <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
+
+        <div className="flex transition-transform  duration-700 ease-in-out" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
           {slides.map((slide, index) => (
             <div className="min-w-full h-[80vh] relative flex items-center justify-center" key={index}>
               <Image src={slide.src} alt={`Slide ${index + 1}`} layout="fill" objectFit="cover" className="z-0" />
-              <div className="absolute bg-[#2a11057e] bg-opacity-50 text-white p-6 rounded-lg max-w-xl text-center z-10">
-                <h2 className="text-[22px] md:text-3xl font-bold mb-2">{slide.title}</h2>
+                <div className="absolute inset-0 bg-[#00000059] bg-opacity-50 z-10"></div>
+              <div className="absolute  bg-opacity-50  text-white p-6 rounded-lg max-w-xl text-center z-10">
+                <h2 className="text-[22px] font-serif  md:text-3xl font-bold mb-2">{slide.title}</h2>
                 <p className="text-md">{slide.description}</p>
                  <Link href={slide.url}>
                  <div className="bg-[#480200] w-35 m-auto mt-5 hover:bg-[#2A1105]  p-2 rounded-xl text-white">Book Now</div>

@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-lg shadow-2xl p-6 flex flex-col sm:flex-row gap-4 text-left items-center sm:items-start">
+              <div className=" bg-[#2a11053b] rounded-lg shadow-2xl p-6 flex flex-col sm:flex-row gap-4 text-left items-center sm:items-start">
                 {/* <img
                   src={t.image}
                   alt={t.name}

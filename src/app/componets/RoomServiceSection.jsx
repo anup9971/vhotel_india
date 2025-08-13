@@ -43,13 +43,13 @@ export default function RoomServiceSection() {
           </div>
 
           {/* Towels Image */}
-          <Image
+          {/* <Image
             src="/home/towels.png"
             alt="Towels"
             width={350}
             height={350}
             className="rounded-lg shadow-lg"
-          />
+          /> */}
         </div>
       </div>
     </section>
