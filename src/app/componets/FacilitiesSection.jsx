@@ -119,7 +119,7 @@ const services = [
 
 export default function Amenities() {
   return (
-    <section className="w-full  overflow-hidden py-16 px-4 md:px-20 bg-white text-center">
+    <section className="w-full  overflow-hidden py-16 px-4 md:px-20 bg-[#fdf4d7e0] text-center">
       <h2 className="text-sm font-semibold text-[#f5bc27] uppercase tracking-wide mb-2">
         Our Services
       </h2>
@@ -128,12 +128,12 @@ export default function Amenities() {
       </h1>
    
 
-      <div className="grid grid-cols-1 bg-white sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-10" >
+      <div className="grid grid-cols-1 bg-[#fdf4d7e0] sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-10" >
         {services.map((service, index) => (
           <div
             key={index}
             style={{boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", }}
-            className={`${service.bg? "bg-[#fff7f7]": "bg-white"} hover:shadow-2xl  transition duration-300 ease-in-out rounded-lg p-6  group hover:-translate-y-1 `}
+            className={`${service.bg? "bg-[#48020042]": "bg-[#2a11053b]"} hover:shadow-2xl  transition duration-300 ease-in-out rounded-lg p-6  group hover:-translate-y-1 `}
           >
             <img
               src={service.icon}

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from 'next/image';
-export default function HeroSlider() {
+export default function   HeroSlider() {
  
    const slides = [
   { 
@@ -85,11 +85,11 @@ export default function HeroSlider() {
           {slides.map((slide, index) => (
             <div className="min-w-full h-[80vh] relative flex items-center justify-center" key={index}>
               <Image src={slide.src} alt={`Slide ${index + 1}`} layout="fill" objectFit="cover" className="z-0" />
-              <div className="absolute bg-[#11111141] bg-opacity-50 text-white p-6 rounded-lg max-w-xl text-center z-10">
+              <div className="absolute bg-[#2a11057e] bg-opacity-50 text-white p-6 rounded-lg max-w-xl text-center z-10">
                 <h2 className="text-[22px] md:text-3xl font-bold mb-2">{slide.title}</h2>
                 <p className="text-md">{slide.description}</p>
                  <Link href={slide.url}>
-                 <div className="bg-amber-600 w-35 m-auto mt-5 hover:bg-amber-700  p-2 rounded-xl text-white">Book Now</div>
+                 <div className="bg-[#480200] w-35 m-auto mt-5 hover:bg-[#2A1105]  p-2 rounded-xl text-white">Book Now</div>
               </Link>
               </div>
              

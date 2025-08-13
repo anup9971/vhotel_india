@@ -36,7 +36,7 @@ export default function RoomPricing() {
   ];
 
   return (
-    <section className="py-20 bg-[#f8f8f8] text-center">
+    <section className="py-20 bg-[#f8f8f8] text-center" style={{backgroundImage:"url(/home/pricebg.jpg)"}}>
       <p className="uppercase text-xs tracking-widest text-gray-800 mb-2">Our Room Prices</p>
       <h2 className="text-4xl font-serif text-gray-900 font-medium mb-12">The Best Room Prices</h2>
 
@@ -46,7 +46,7 @@ export default function RoomPricing() {
             key={index}
             className={`relative p-8 shadow-md rounded-md ${
               plan.highlight
-                ? 'bg-[#f5bc27] text-black bg-blend-overlay bg-cover bg-center'
+                ? 'bg-[#480200] text-white bg-blend-overlay bg-cover bg-center'
                 : 'bg-white text-gray-900'
             }`}
             style={
@@ -56,7 +56,7 @@ export default function RoomPricing() {
             }
           >
             {plan.highlight && (
-              <div className="absolute top-0 right-0 bg-[#6B8CA0] text-white text-xs rotate-25 origin-top-right px-2 py-1">
+              <div className="absolute top-0 right-0 bg-[#480200] text-white text-xs rotate-25 origin-top-right px-2 py-1">
                 ★ Best Offer
               </div>
             )}
@@ -68,16 +68,16 @@ export default function RoomPricing() {
             </p>
             <ul className="text-sm space-y-2 mb-6 text-left pl-6">
               {plan.features.map((feature, i) => (
-                <li key={i} className="flex items-start gap-2">
-                  <span>✔</span> <span>{feature}</span>
+                <li key={i} className="flex  items-start gap-2">
+                  <span >✔</span> <span className="">{feature}</span>
                 </li>
               ))}
             </ul>
             <button
               className={`px-4 py-2 text-sm font-semibold uppercase tracking-wide border ${
                 plan.highlight
-                  ? 'bg-white text-black'
-                  : 'bg-[#0c1e3c] text-white hover:bg-[#1d3151]'
+                  ? 'bg-white text-black '
+                  : 'bg-[#480200] text-white hover:bg-[#2a1105]'
               }`}
             >
               Read More

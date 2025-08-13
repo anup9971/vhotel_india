@@ -62,8 +62,8 @@ const hotels = [
 export default function HotelGrid() {
   return (
     <>
-    <div className="bg-[#f8f5f0]">
-      <p className="text-xl text-center pt-15 text-[#f5bc27]">Our Luxury Hotels</p>
+    <div className="bg-[#fdf4d7e0]">
+      <p className="text-xl text-center pt-15 text-[#480200]">Our Luxury Hotels</p>
       <p className="text-center text-2xl text-black md:text-4xl pb-5 ">Experience Comfort Across Our Hotels</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-5 gap-6 p-4">
       {hotels.map((hotel, index) => (
