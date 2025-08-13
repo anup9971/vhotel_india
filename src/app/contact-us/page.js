@@ -8,7 +8,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 export default function page() {
   return (
     <>
-       <div className="w-full bg-white">
+       <div className="w-full bg-[#fdf4d7e0]">
                <div className="relative w-full h-[400px]">
                  <Image
                    src="/home/slider10.jpg" // Save the uploaded image in public/reception.jpg
@@ -20,9 +20,9 @@ export default function page() {
                </div>
         </div>
 
-     <div class="md:grid  grid-cols-4 gap-4 p-8 bg-white">
+     <div class="md:grid  grid-cols-4 gap-4 p-8 bg-[#fdf4d7e0]">
 
-         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-white'>
+         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-[#48020042]'>
             <FaPhoneVolume className='text-[#ed552d] hover:text-[#4d4ae7] text-4xl mb-2' />
             <p className='text-gray-800 font-medium'>Call Us</p>
             <p className="mb-2 text-gray-600">
@@ -30,24 +30,24 @@ export default function page() {
             </p>
           </div>
 
-         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-white'>
+         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-[#2a11053b]'>
              <IoMail className='text-[#ed552d] hover:text-[#4d4ae7] text-4xl mb-2 ' />
              <p className='text-gray-800 font-medium'>Email Us</p>
              <a className=" text-gray-600 mb-2 " href="mailto:info@vhotelindia.com"> info@vhotelindia.com</a>
          </div>
-         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-white'>
+         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-[#48020042]'>
               <MdLocationOn className='text-[#ed552d] hover:text-[#4d4ae7] text-4xl mb-2 ' />
                <p className='text-gray-800 font-medium'>Address</p>
                <p  className=" text-gray-600 mb-2 ">  New Delhi</p>
          </div>
-         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-white'>
+         <div className='flex flex-col mb-8 items-center justify-center text-center shadow-lg h-45 bg-[#2a11053b]'>
                <FaEarthAmericas className='text-[#ed552d] hover:text-[#4d4ae7] text-4xl mb-2 ' />
                 <p className='text-gray-800 font-medium'>Website</p>
                 <a className=" text-gray-600 mb-2 " href="http://www.vhotelindia.com" target="_blank" rel="noopener noreferrer">   www.vhotelindia.com</a>
          </div>
     </div>
 
-     <div className="bg-[#fdfbf6] py-10 px-4">
+     <div className="bg-[#fdf4d7e0] py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Google Map */}
         <div className="w-full h-80">

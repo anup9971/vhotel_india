@@ -5,7 +5,7 @@ import ReservationForm from '../componets/reservations/ReservationForm'
 export default function page() {
   return (
     <>
-       <div className="w-full bg-white">
+       <div className="w-full bg-[#fdf4d7e0]">
             <div className="relative w-full h-[400px]">
               <Image
                 src="/home/slider10.jpg" 
